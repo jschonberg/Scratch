@@ -6,8 +6,7 @@ import os
 def getPath():
         s = sublime.load_settings("Scratch.sublime-settings")
         save_path = s.get("save_path", "~/Documents/Scratch")
-        if save_path[0] == '~':
-            save_path = os.path.expanduser('~') + save_path[1:]
+        save_path = os.path.expanduser(save_path)
         return save_path
 
 def getExtension():
