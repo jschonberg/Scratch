@@ -53,10 +53,6 @@ class ScratchCommand(sublime_plugin.WindowCommand):
         filename = save_path + "/" + str(new_int) + save_extension
         self.window.open_file(filename)
 
-    
-
-
-
     def _getNextInt(self, directory):
         """Return the next highest integer to be used for a filename in directory"""
         files = os.listdir(directory)
