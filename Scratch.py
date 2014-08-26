@@ -15,8 +15,6 @@ def getExtension():
     save_extension = s.get("extension", ".scratch")
     return save_extension
 
-
-
 class SyntaxPreSaveCommand(sublime_plugin.EventListener):
     def on_post_save(self, view):
         if not view.file_name().startswith(getPath()):
@@ -35,7 +33,6 @@ class SyntaxPreSaveCommand(sublime_plugin.EventListener):
                 fout.writelines(data[1:])
             sublime.active_window().run_command("close")
             sublime.active_window().open_file(new_name)
-
 
 class ScratchCommand(sublime_plugin.WindowCommand):
     def run(self):
