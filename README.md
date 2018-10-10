@@ -5,7 +5,7 @@ Scratch
 
 Scratch is a simple Sublime Text plugin that makes it easy to create scratch files for code snippets and notes. These files are saved in single location for easy searching and access later.
 
-##Usage
+## Usage
 ### Basic Usage
 1. In Sublime Text Go to ```File > New Scratch File``` 
 2. A new file is opened. The file is named "*number*.*extension*". *number* is an integer that is set to one more than the last saved Scratch file name. *extension* is a user-configurable extension.  
@@ -14,7 +14,7 @@ Scratch is a simple Sublime Text plugin that makes it easy to create scratch fil
   ```File > New Scratch File``` to open "0.py". Save the file.  
   ```File > New Scratch File``` to open "1.py".
 
-###Changing File Extensions Quickly
+### Changing File Extensions Quickly
 To quickly change the extension of a Scratch file: 
 
 1. Set the first line of the file to contain *only* the new extension you want to switch to.  
